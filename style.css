@@ -1,17 +1,145 @@
 body{
 
-    margin:0;
-    padding: 0;
-    background-color: cadetblue;
-
+    padding: 0%;
+    margin: 0%;
+   
+   
+ 
  
 }
 
-.loremTekst{
+.banner{
 
-    text-decoration: underline;
-    background-color: aquamarine;
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-color: linear-gradient(rgba(17, 15, 15, 0.5),rgba(34, 150, 86, 0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar{
+
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.logo{
+
+    width: 200px; 
+    cursor: pointer;
+    border-radius: 30%
+    
+}
+
+
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: #423535;
+    font-size: 50px;
+    font-weight: 50;
+   
+  
+}
+
+.navbar ul li a:hover{
+
+    color: #4d5e98;
+    border: 2px solid #fff;
+    background-color: rgb(166, 161, 161);
+    text-transform: uppercase;
+    transition: 0.8s;
    
 }
 
 
+.content{
+
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    text-align: center;
+    color: #423535;
+}
+
+.content h1{
+
+    font-size: 80px;
+}
+
+
+.content p{
+
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 50;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+  
+}
+
+[type="submit"] {
+    
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
